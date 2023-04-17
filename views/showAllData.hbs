@@ -1,0 +1,29 @@
+
+<table border="1">
+    <tr>
+        <th>ISBN</th>
+        <th>TITLE</th>
+        
+        <th>Author</th>
+        <th>Inventory</th>
+        <th>Category</th>
+    </tr>
+{{#each obj}}
+ 
+ {{#co}}{{this.author}}{{/co}}    
+<td><p></p>{{ISBN}}</p></td>
+<td><p>{{this.title}}</p></td>
+
+<td><p>{{this.author}}</p></td>
+{{#if this.inventory}}
+<td><p>{{this.inventory}}</p></td>
+{{else}}
+<td><p>{{#outOfStock}}{{this.inventory}}{{/outOfStock}}</p></td>
+{{/if}}
+
+<td><p>{{category}}</p></td>
+</tr>
+
+{{/each}}
+
+</table>

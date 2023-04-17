@@ -1,0 +1,22 @@
+.content {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  .fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+    padding-left: -50px;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
