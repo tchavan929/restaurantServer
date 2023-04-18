@@ -25,7 +25,7 @@ app.use(cors());
 
 var User = require('./models/user');
 var Restaurant = require('./models/restaurant.js');
-var RestaurantMenu = require('./models/restaurantMenu.js');
+var RestaurantMenu = require('./models/RestaurantMenu.js');
 /*
 app.use(function(req, res, next) {
 	res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from access-control-allow-origin
