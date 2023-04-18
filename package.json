@@ -2,9 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "React and nodejs restaurant app",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node app.js"
   },
   "repository": {
     "type": "git",

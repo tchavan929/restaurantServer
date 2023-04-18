@@ -11,7 +11,7 @@ require('dotenv').config();
 const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
 //var port     = process.env.PORT;
-var port     = 8080;
+var port     = process.env.PORT||8080;
 
 database.initialize("mongodb+srv://mongo_tushar:Welcome123@clustertushar.2pfogop.mongodb.net/restaurant?retryWrites=true&w=majority");
 //app.use(bodyParser.urlencoded({'extended':'true'}));  
