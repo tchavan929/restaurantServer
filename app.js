@@ -11,10 +11,10 @@ const auth = require("./middleware/auth");
 require('dotenv').config();
 const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
-var port     = process.env.PORT || 8000;
+var port     = 4000;
 
 
-database.initialize(process.env.DBURL||database.url);
+database.initialize("mongodb+srv://mongo_tushar:Welcome123@clustertushar.2pfogop.mongodb.net/restaurant?retryWrites=true&w=majority");
 app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
 //app.use(bodyParser.json());                                     // parse application/json
 //app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
