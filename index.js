@@ -22,10 +22,10 @@ app.use(cors());
 //const HBS= exphbs.create({ extname: '.hbs',defaultLayout:"main",layoutsDir:path.join(__dirname,'views','layouts')});
 //app.engine('.hbs', HBS.engine);
 //app.set('view engine', 'hbs');
-var Movie = require('./models/movie');
+
 var User = require('./models/user');
-var Restaurant = require('./models/restaurant');
-var RestaurantMenu = require('./models/restaurantMenu');
+var Restaurant = require('./models/restaurant.js');
+var RestaurantMenu = require('./models/restaurantMenu.js');
 /*
 app.use(function(req, res, next) {
 	res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from access-control-allow-origin
