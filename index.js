@@ -10,7 +10,7 @@ const auth = require("./middleware/auth");
 require('dotenv').config();
 const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
-var port     = 4000;
+var port     = process.env.PORT;
 
 database.initialize("mongodb+srv://mongo_tushar:Welcome123@clustertushar.2pfogop.mongodb.net/restaurant?retryWrites=true&w=majority");
 //app.use(bodyParser.urlencoded({'extended':'true'}));  
