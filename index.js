@@ -10,9 +10,9 @@ const auth = require("./middleware/auth");
 require('dotenv').config();
 const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
-var port     = process.env.PORT || 8000;
+var port     = 4000;
 
-database.initialize(process.env.DBURL||database.url);
+database.initialize("mongodb+srv://mongo_tushar:Welcome123@clustertushar.2pfogop.mongodb.net/restaurant?retryWrites=true&w=majority");
 //app.use(bodyParser.urlencoded({'extended':'true'}));  
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
