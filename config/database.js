@@ -1,10 +1,10 @@
 var mongoose = require('mongoose');
 
 
-var port     = process.env.PORT || 8000;
+
 var Movie = require('../models/movie');
-var Restaurant = require('../models/restaurant');
-var RestaurantMenu = require('../models/restaurantMenu');
+var Restaurant = require('../models/restaurant.js');
+var RestaurantMenu = require('../models/restaurantMenu.js');
 module.exports = {
     url : "mongodb://localhost:27017/sample_mflix"
    //url:"mongodb+srv://mongo_tushar:Welcome123@clustertushar.cfnoe0h.mongodb.net/sample_mflix?retryWrites=true&w=majority"
