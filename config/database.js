@@ -139,7 +139,7 @@ module.exports.getRestaurantsMenu=(data)=>{
     const get_data = new Promise(function(resolve, reject) {
         
       
-            RestaurantMenu.find().exec(function(err, res) {
+            RestaurantMenu.find({restaurant_id:data}).exec(function(err, res) {
                 if (err){
                     response=err
                     reject(err);
